@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Giphy API Project</title>
+    <meta charset="UTF-8">
+    <title>Giphy API Project</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Assets/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+
 <body>
-	
+    <div class="jumbotron jumbotron-fluid">
+        <h1 class="display-3">Giphy API Homework</h1>
+    </div>
+    <br>
+    <form id="theform" onsubmit="false">
+    	<label>New Animal</label>
+    	<input type="text" class="form-control" id="formone" aria-describedby="" value="" placeholder="Enter Animal Here">
+    	<input id="submitbutton" type="submit" class="btn btn-primary" value="submit" onclick="getData"/>
+    	</div>
+    </form>
+    <button data-person="Yeti" class="gif">Yeti</button>
+    <button data-person="Chupacabra" class="gif">Chupacabra</button>
+    <button data-person="Sasquatch" class="gif">Sasquatch</button>
+    <button data-person="Vampire" class="gif">Vampire</button>
+    <button data-person="Werewolf" class="gif">Werewolf</button>
+    <button data-person="Loch Ness Monster" class="gif">Loch Ness Monster</button>
+    <button data-person="Jersey Devil" class="gif">Jersey Devil</button>
+    <button data-person="Minotaur" class="gif">Minotaur</button>
+    <button data-person="Unicorn" class="gif">Unicorn</button>
+    <button data-person="Thunderbird" class="gif">Thunderbird</button>
+    <div id="gifs-here">
+    </div>
+    <br>
+  </div>
+    <script type="text/javascript" src="Assets/javascript.js">
+	 </script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   
 </body>
+
 </html>
