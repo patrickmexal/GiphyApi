@@ -1,5 +1,5 @@
 var topics = ["Yeti", "Chupacabra", "Sasquatch", "Vampire", "Werewolf", "Loch Ness Monster", "Jersey Devil", "Minotaur", "Unicorn", "Thunderbird"];
-var formData;
+var formData = null;
 //AJAX Query to pull the gifs from GIPHY.
 $("button").on("click", function() {
     var person = $(this).attr("data-person");
@@ -48,10 +48,10 @@ $(".gif").on("click", function() {
 // Attempting to push new value into Topics array 
 
 function getData() {
-	formData = $("#theform").val
-	alert(this.value);
+	formData = $("#theform").val()	
 };
+console.log(formData);
 
-var submitListen = document.getElementById("submitbutton");
-submitListen.addEventListener('click', getData, false);
+/*var submitListen = $("#submitbutton").on
+submitListen.addEventListener('click', getData, false);*/
 
