@@ -34,7 +34,7 @@ $("button").on("click", function() {
 //Attempting to change the state of the GIFs
 $("document").ready()
 $(".gif").on("click", function() {
-    // The attr jQuery method allows us to get or set the value of any attribute on our HTML element
+    
     var state = $(this).attr("data-state");
     
     if (state === "still") {
@@ -45,12 +45,19 @@ $(".gif").on("click", function() {
         $(this).attr("data-state", "still");
     }
 });
+
+var formData = document.getElementById("formone").value;
+
+var theInput = $("input#formone").val();
+
+console.log(theInput);
+
 // Attempting to push new value into Topics array 
 
-function getData() {
+/*function getData() {
 	formData = $("#theform").val()	
 };
-console.log(formData);
+console.log(formData);*/
 
 /*var submitListen = $("#submitbutton").on
 submitListen.addEventListener('click', getData, false);*/

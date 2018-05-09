@@ -1,8 +1,25 @@
+.jumbotron {
+	margin-top: 30px;
+}
+
 h1 {
 	text-align: center;
 }
+
+body {
+	background-image: url("https://img.buzzfeed.com/buzzfeed-static/static/2018-01/23/15/asset/buzzfeed-prod-fastlane-01/anigif_sub-buzz-27474-1516737829-1.gif");
+}
+
 #theform {
 	clear: both;
 	float: right;
 	width: 20%;
+}
+
+.item {
+	margin-left: 100px;
+}
+
+button.gif {
+	padding: 10px;
 }
