@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Giphy API Project</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="Assets/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -14,31 +15,34 @@
         <h1 class="display-3">Fun With the Giphy API</h1>
     </div>
     <br>
-    <form id="theform" onsubmit="false">
-    	<label>New Animal</label>
-    	<input type="text" class="form-control" id="formone" aria-describedby="" value="" placeholder="Enter Animal Here">
-    	<!--<input id="submitbutton" type="submit" class="btn btn-primary" value="submit" onclick="getData"/>
-    	</div> -->
+    <form id="theform">
+        <label>New Animal</label>
+        <input type="text" class="form-control" id="formOne"  placeholder="Enter Animal Here"></input>
+        <button id="submit" onclick="theSetter()">Submit</button>
+        </div> 
     </form>
-    <button data-person="Yeti" class="gif">Yeti</button>
-    <button data-person="Chupacabra" class="gif">Chupacabra</button>
-    <button data-person="Sasquatch" class="gif">Sasquatch</button>
-    <button data-person="Vampire" class="gif">Vampire</button>
-    <button data-person="Werewolf" class="gif">Werewolf</button>
-    <button data-person="Loch Ness Monster" class="gif">Loch Ness Monster</button>
-    <button data-person="Jersey Devil" class="gif">Jersey Devil</button>
-    <button data-person="Minotaur" class="gif">Minotaur</button>
-    <button data-person="Unicorn" class="gif">Unicorn</button>
-    <button data-person="Thunderbird" class="gif">Thunderbird</button>
+    <div class="container" id="theButtons">
+        <button data-person="Yeti" class="gif">Yeti</button>
+        <button data-person="Chupacabra" class="gif">Chupacabra</button>
+        <button data-person="Sasquatch" class="gif">Sasquatch</button>
+        <button data-person="Vampire" class="gif">Vampire</button>
+        <button data-person="Werewolf" class="gif">Werewolf</button>
+        <button data-person="Loch Ness Monster" class="gif">Loch Ness Monster</button>
+        <button data-person="Jersey Devil" class="gif">Jersey Devil</button>
+        <button data-person="Minotaur" class="gif">Minotaur</button>
+        <button data-person="Unicorn" class="gif">Unicorn</button>
+        <button data-person="Thunderbird" class="gif">Thunderbird</button>
+    </div>
+    <div class="row">
+    </div>
     <div id="gifs-here">
     </div>
     <br>
-  </div>
+    </div>
     <script type="text/javascript" src="Assets/javascript.js">
-	 </script>
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     <span id="demospan">Demo</span>
-   
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <span id="demospan">Demo</span>
 </body>
 
 </html>

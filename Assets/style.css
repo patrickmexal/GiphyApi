@@ -7,8 +7,16 @@ h1 {
 }
 
 body {
-	background-image: url("https://img.buzzfeed.com/buzzfeed-static/static/2018-01/23/15/asset/buzzfeed-prod-fastlane-01/anigif_sub-buzz-27474-1516737829-1.gif");
+	background-image: url("https://media.tenor.com/images/6456ea89a19623f16b0904357213326f/tenor.gif"); {
+		opacity: .3;
+	}
+	background-size: auto;
+
 }
+
+.row {
+	min-height: 50px;
+} 
 
 #theform {
 	clear: both;
@@ -22,4 +30,12 @@ body {
 
 button.gif {
 	padding: 10px;
+}
+
+label {
+	color: black;
+	font-size: 2em;
+	background-color: white;
+	border-radius: 3px;
+	padding: 5px;
 }

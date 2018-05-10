@@ -1,5 +1,7 @@
 var topics = ["Yeti", "Chupacabra", "Sasquatch", "Vampire", "Werewolf", "Loch Ness Monster", "Jersey Devil", "Minotaur", "Unicorn", "Thunderbird"];
-var formData = null;
+var formData;
+var rating;
+var yeti;
 //AJAX Query to pull the gifs from GIPHY.
 $("button").on("click", function() {
     var person = $(this).attr("data-person");
@@ -17,7 +19,7 @@ $("button").on("click", function() {
             for (var i = 0; i < 11; i++) {
                 var gifDiv = $("<div class='item'>");
 
-                var rating = results[i].rating;
+                rating = results[i].rating;
 
                 var p = $("<p>").text("Rating: " + rating);
 
@@ -32,7 +34,7 @@ $("button").on("click", function() {
         });
 });
 //Attempting to change the state of the GIFs
-$("document").ready()
+$("document").ready() 
 $(".gif").on("click", function() {
     
     var state = $(this).attr("data-state");
@@ -46,19 +48,49 @@ $(".gif").on("click", function() {
     }
 });
 
-var formData = document.getElementById("formone").value;
 
-var theInput = $("input#formone").val();
+// var theInput = $("input#formone").val();
 
-console.log(theInput);
+// console.log(theInput);
 
 // Attempting to push new value into Topics array 
 
-/*function getData() {
-	formData = $("#theform").val()	
-};
-console.log(formData);*/
+// function getData() {
+//     $("#submit").on("click", function() {
+// 	formData = $("#formOne").val();
+//     })
+// };
 
+
+// $(document).ready(function(){
+//     $("#submit").click(function(){
+//          yeti = $("#formOne").val();
+//     });
+// });
+
+// function theSetter() {
+//     yeti = $("#formOne").val();
+//     topics.push(yeti);
+//     $("#theButtons").append(yeti);
+//     console.log(topics);
+// }
+
+$(function () {
+    $("#submit").click(function() {
+         yeti = $("#formOne").val();
+         function theSetter() {
+         topics.push(yeti);
+        }
+        console.log(topics);
+    })
+})
+
+// function getData() {
+//     theInput = $("formOne").val();
+//     console.log(theInput);
+// }
+
+// getData();
 /*var submitListen = $("#submitbutton").on
 submitListen.addEventListener('click', getData, false);*/
 
